@@ -1,0 +1,33 @@
+.rains {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.rains::after {
+    background-color: blue;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    transform: rotate(45deg) scale(10, 1);
+}
+
+
+#back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(grey, rgb(22, 22, 110), rgb(88, 88, 190), lightblue, rgb(114, 160, 114), rgb(128, 34, 34));
+}
