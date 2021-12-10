@@ -11,7 +11,6 @@
     border-radius: 50%;
 }
 .rains::after {
-    /* background-color: blue; */
     content: "";
     position: absolute;
     width: 0;
@@ -20,8 +19,40 @@
     left: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 60px solid white;
+    border-bottom: 60px solid white; 
 }
+
+.rain_1 {
+    left: -85%;
+}
+.rain_2 {
+    left: -60%;
+}
+.rain_3 {
+    left: -40%;
+}
+.rain_4 {
+    left: -20%;
+}
+.rain_5 {
+    left: 0%;
+}
+.rain_6 {
+    left: 20%;
+}
+.rain_7 {
+    left: 40%;
+}
+.rain_8 {
+    left: 60%;
+}
+.rain_9 {
+    left: 85%;
+}
+
+
+
+
 
 
 #back {
