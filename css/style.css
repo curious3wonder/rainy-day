@@ -1,4 +1,4 @@
-.rains {
+.rains1, .rains2 {
     position: absolute;
     margin: auto;
     top: 0;
@@ -10,7 +10,7 @@
     width: 40px;
     border-radius: 50%;
 }
-.rains::after {
+.rains1::after, .rains2::after {
     content: "";
     position: absolute;
     width: 0;
@@ -22,38 +22,68 @@
     border-bottom: 60px solid white; 
 }
 
+.rains1 {
+    animation-name: drop1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.rains2 {
+    animation-name: drop2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
 .rain_1 {
     left: -85%;
+    bottom: -20%;
 }
 .rain_2 {
     left: -60%;
 }
 .rain_3 {
     left: -40%;
+    bottom: -60%;
 }
 .rain_4 {
     left: -20%;
+    bottom: -30%;
 }
 .rain_5 {
     left: 0%;
+    bottom: 0%;
 }
 .rain_6 {
     left: 20%;
+    bottom: -90%;
 }
 .rain_7 {
     left: 40%;
+    bottom: -10%;
 }
 .rain_8 {
     left: 60%;
 }
 .rain_9 {
     left: 85%;
+    bottom: -30%;
 }
 
-
-
-
-
+@keyframes drop1 {
+    0% {
+        top: -800px;
+      }
+      100% {
+        top: 300px;
+      }
+}
+@keyframes drop2 {
+    0% {
+        top: -800px;
+      }
+      100% {
+        top: 300px;
+      }
+}
 
 #back {
     position: fixed;
