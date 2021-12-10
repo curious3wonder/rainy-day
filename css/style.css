@@ -11,13 +11,16 @@
     border-radius: 50%;
 }
 .rains::after {
-    background-color: blue;
+    /* background-color: blue; */
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
-    bottom: 15px;
-    transform: rotate(45deg) scale(10, 1);
+    width: 0;
+    height: 0;
+    bottom: 24px;
+    left: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 60px solid white;
 }
 
 
